@@ -1,40 +1,46 @@
 :root {
-    --silvergrey: rgb(225, 225, 225);
+    --silvergrey: rgb(225, 225, 225, .5);
     --darkred: rgb(170, 11, 11);
     --darkgrey: rgb(44 44 44);
+    --bluegrey: rgb(168, 170, 187);
+    --darkbluegrey: rgb(33, 72, 92);
+    --sapphireblue:rgb(31, 81, 255);
+    --goldenyellow:rgb(255, 184, 48);
+    --softwhite:rgb(255, 237, 218);
+    --brightred:rgb(255, 36, 66);
 }
 /* primary body styling */
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 12px;
     display: flex;
     flex-direction: column;
-    line-height: 1;
-    background-color: var(--silvergrey);
+    background-color: var(--softwhite);
+    color:var(--skyblue);
 }
 /* primary header styling */
 header {
-    display:flex;
+    display:inline-flex;
     flex-wrap: wrap;
-    background-color: var(--darkgrey);
-    color:aquamarine;
-    display:flex;
+    background-color: var(--goldenyellow);
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     padding: 10px 0px; 
+    font-size: 150%;
 }
 /* h1 title styling */
 h1 {
-    background-color: aquamarine;
-    color: var(--darkgrey);
-    font-size: 400%;
+    background-color: var(--sapphireblue);
+    color: var(--goldenyellow);
+    font-size: 200%;
+    font-weight:bolder;
     display:inline-flex;
-    padding: 0px 5px 0px 35px;
+    padding: 0.25% 0.5% 0.25% 2%;
     border-radius: 0px 10px 10px 0px;
 }
 /* nav bar display */
 nav {
     display: inline-flex;
+    font-weight:bold;
 }
 /* nav bar link style */
 nav ul {
@@ -42,22 +48,21 @@ nav ul {
     justify-content:right;
     list-style: none;
     padding-right: 35px;
+    gap: 15px;
 }
 /* nav bar list item style */
 nav ul li {
-    display:inline-block;
+    display:inline-flex;
     justify-content:space-between;
 }
 /* nav bar link styling */
 nav a {
-    color:aquamarine;
+    color: var(--sapphireblue);
     text-decoration: underline;
-    padding: 0px 10px;
-    font-size: 200%;
 }
-/* nav bar links hover */
+/* nav bar links hover styling */
 nav a:hover {
-    color: rgb(255, 255, 0, 1);
+    color:var(--brightred);
 }
 /* background banner styling */
 .banner {
@@ -67,66 +72,151 @@ nav a:hover {
 /* h2 subtitle styling */
 h2 {
     display: inline-flex;
-    font-size: 250%;
-    justify-content:flex-end;
+    font-size: 125%;
     position:relative;
-    top: 200px;
-    left: 70%;
-    position:absolute;
-    right: 35px;
-    margin: 10px;
-    color:var(--darkgrey);
-    background-color: rgb(127, 255, 212, 1);
+    bottom: -200px;
+    left: 80%;
+    background-color: var(--goldenyellow);
+    color: var(--sapphireblue);
     border: 5px;
     border-radius: 10px;
-    padding: 5px;
+    padding: 0.25%;
+}
+/* main content styling */
+main{
+    display:flex;
+    flex-direction: column;
+    margin:10px 45px;
+    gap:10px;
+    color: var(--sapphireblue);
 }
 /* article content spacing styling */
 article {
+    width: 100%;
     display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-left: 45px;
-    margin-right: 45px;
-
+    flex-direction: column;
+    margin: 0px;
+    gap: 10px;
 }
-
 /* h3 article content heading styling */
 h3 {
-    display:flex;
-    color:blue;
-    background-color: transparent;
-    border-right: 5px solid blue;
-    position:absolute;
-    justify-content:right;
-    font-size: 225%;
+    width: 15%;
+    border-right:double 5px;
+    text-align: right;
+    font-size: 200%;
+    padding-right: 5px;
 }
-/* work feature styling*/
+/* about me content styling */
+.aboutme {
+    width: 85%;
+    display:inline-flex;
+    flex-direction: row;
+    text-align: justify;
+    padding-left:5px;
+}
+/* work content styling */
+.work {
+    width:85%;
+    display:inline-flex;
+    flex-direction: row;
+    padding-left: 5px;
+}
+/* displayed aera for work content area */
+.workdisplay {
+    width: 100%;
+    display:inline-flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/* feature work styling */
 .feature {
-    justify-items: center;
-    background-color: aquamarine;
-    border: 3px;
-    border-radius: 10px;
-}
-
+    width:100%;
+    display:inline-flex;
+    flex-direction:row;
+}/* feature work img styling */
 .feature a figure img {
-    display:flex;
-    max-height: 500px;
-    padding:10px;
+    width: 100%;
+    padding:5px;
+    background-color: var(--goldenyellow);
+    border-radius: 5px;
 }
-
-a h4 {
-    text-decoration: none;
+/* quad features styling */
+.quadfeatures {
+    width:100%;
+    display:inline-flex;
+    flex-direction:row;
+    gap: 10px;
 }
-
+/* sample work styling */
 .samples {
-    justify-self: center;
-    margin-left: 15px;
-    background-color: aquamarine;
-    border: 5px;
-    border-radius: 10px;
+    width:100%;
+    display: inline-flex;
+    flex-direction:column;
+    border: 3px;
+    gap: 10px;
 }
-
-.samples a {
-    
+/* quad features img styling */
+.samples a figure img {
+    width: 100%;
+    padding:5px;
+    background-color: var(--goldenyellow);
+    border-radius: 5px;
+}
+/* more work styling */
+.morework {
+    width: 100%;
+    height:15%;
+}
+/* work images figcaption label styling */
+figcaption {
+    text-decoration:none;
+    margin-right:50%;
+    position:relative;
+    top: -80px;
+    padding-left: 5%;
+    padding-top:5px;
+    padding-bottom:5px;
+    color:var(--sapphireblue);
+    background-color: var(--goldenyellow);
+    border-radius:0px 10px 10px 0px;
+}
+/* h4 figcaption label font size adjustment*/
+a h4 {
+    font-size:125%;
+}
+/* contact content styling */
+.contact {
+    width:85%;
+    display: inline-flex;
+    flex-direction: row;
+    align-items:center;
+}
+/* contact list styling */
+.contact ul {
+    justify-content:space-between;
+    list-style: none;
+}
+/* contact list styling */
+.contact ul li {
+    display:inline-flex;
+    justify-content:space-between;
+    text-decoration: underline;
+    padding: 0 15px;
+}
+/* footer styling */
+footer {
+    display:flex;
+    background-color: var(--goldenyellow);
+    justify-content:space-around;
+    text-align:center;
+    padding: 5px 0px; 
+}
+/* footer link styling */
+footer a{
+    color: var(--sapphireblue);
+    padding: 0px 5px;
+}
+/* footer link hover styling */
+footer a:hover {
+    color: var(--brightred);
 }

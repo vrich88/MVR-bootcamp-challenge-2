@@ -6,90 +6,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>vrich88-C2-home</title>
+    <title>vrich88-C2-home2</title>
 </head>
 
 <body>
-    <header>
+    <header id="top">
         <h1>M Vincent Richards</h1>
         <nav>
             <ul>
-                <li> <a href="#about-me">About Me</a> </li>
-                <li> <a href="#work">Work</a> </li>
-                <li> <a href="#contact-me">Contact Me</a> </li>
-                <li> <a href="#resume">Resume</a> </li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
+                <li><a href="./pages/resume.html">Resume</a></li>
             </ul>
         </nav>
-    </header>
-
+    </header> 
     <section class="banner">
         <h2>Connecting people thru technology</h2>
     </section>
-
     <main>
-        <article class="aboutme">
-            <h3>About Me</h3>
-            <p>
-                This is space to talk about myself and what I am capble of doing. I should do more but this is the current filler information.<br>
+        <article id="about-me" class="aboutme">
+            <h3>About<br>Me</h3>
+            <p>This is space to talk about myself and show what I am capble of doing. In general it will contain some basic introductory details about me, my education, and career. As a basic premise this area will include details that are designed to set me up as a gold star canadidate.<br>
                 <br>
-                This is continuation of the information about me that should have moreinformation going forward.
+                This is continuation of the information about me that should have more information going forward.  Currently the sentences in this space are to provide the visual spaceing that shows the completion of the challenge with a second paragraph.  Please come back in the future to see my proress.
             </p>
         </article>
-        <article class="work">
+        <article id="work" class="work">
             <h3>Work</h3>
-            <section class="feature">
-                <a href="??" >
-                    <figure>
-                        <img src="./images/bcwk1-screenshot.png"
-                            alt="descript" 
-                            title="test-image"
-                        />
-                        <figcaption>
-                            <h4>
-                                ?h4?
-                            </h4>
-                            <p>
-                                ?p?
-                            </p>
-                        </figcaption>
-                    </figure>
-                </a>
-            </section>
-            <section class="samples">
-                <a href="??" >
-                    <figure>
-                        <img src="./images/globaltechweb.jpg"
-                            alt="networking web sphere" 
-                            title="Networking"
-                        />
-                        <figcaption>
-                            <h4>
-                                ?h4?
-                            </h4>
-                            <p>
-                                ?p?
-                            </p>
-                        </figcaption>
-                    </figure>
-                </a>
+            <section class="workdisplay">
+                <section class="feature">
+                    <a href="https://vrich88.github.io/MVR-bootcamp-challenge-1/" >
+                        <figure>
+                            <img src="./images/bcwk1-screenshot.png"
+                                alt="people in meeting" />
+                            <figcaption class="pricetag">
+                                <h4>Surf Report</h4>
+                                <p>MERN Stack</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </section>
+                <section class="quadfeatures">
+                    <section class="samples">
+                        <a href="./pages/ledwall.html" >
+                            <figure>
+                                <img src="./images/globaltechweb.jpg"
+                                    alt="networking web sphere" />
+                                <figcaption class="pricetag">
+                                    <h4>LED Wall</h4>
+                                    <p>Node/IoT</p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </section>
+                    <section class="samples">
+                        <a href="./pages/calculator.html" >
+                            <figure>
+                                <img src="./images/calculator.webp"
+                                    alt="calculator" />
+                            <figcaption class="pricetag">
+                                <h4>Calculator</h4>
+                                <p>React/JavaScript/CSS</p>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </section>
+                    <section class="samples">
+                        <a href="./pages/pastelpuzzel.html" >
+                            <figure>
+                                <img src="./images/puzzle.jpg"
+                                    alt="puzzel" />
+                                <figcaption class="pricetag">
+                                    <h4>Pastel Puzzels</h4>
+                                    <p>MERN Stack</p>
+                                </figcaption>
+                            </figure>
+                            </a>
+                        </section>
+                        <section class="samples">
+                            <a href="./pages/runbuddy.html" >
+                                <figure>
+                                    <img src="./images/fitness.jpg"
+                                        alt="people running" />
+                                    <figcaption class="pricetag">
+                                        <h4>Run Buddy</h4>
+                                        <p>HTML/CSS</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </section>
+                </section>
+                <!-- future section for link to more work samples
+                <section class="morework">
+                    <p>See more</p>
+                </section>
+                -->
             </section>
         </article>
-        <article>
-            <h3>Contact Me</h3>
+        <article id="contact-me" class="contact">
+            <h3>Contact<br>Me</h3>
             <section>
                 <ul>
-                    <li> (555) 555-5555 </li>
-                    <li> vrich-it@domain.com </li>
-                    <li> GitHub </li>
-                    <li> Twitter </li>
-                    <li> Spotify </li>
+                    <li>(555) 555-5555</li>
+                    <li>vrich-it@domain.com</li>
+                    <li>GitHub</li>
+                    <li>Twitter</li>
+                    <li>Spotify</li>
                 </ul>
             </section>
         </article>
     </main>
+<footer>
+    <h5><a href="#top">Back to top</a></h5>
+</footer>
 </body>
 
-<footer>
 
-</footer>
 </html>
