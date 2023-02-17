@@ -68,67 +68,70 @@ nav a:hover {
 .banner {
     background-image: url(./styleimages/connecttech2.jpg);
     min-height: 250px;
+    align-items: flex-end;
+    padding-right: 25px;
+    padding-top: 200px;
 }
 /* h2 subtitle styling */
 h2 {
-    display: inline-flex;
+    display: flex;
     font-size: 125%;
-    position:relative;
-    bottom: -200px;
-    left: 80%;
-    background-color: var(--goldenyellow);
-    color: var(--sapphireblue);
+    justify-content: flex-end;
+    color: var(--goldenyellow);
     border: 5px;
     border-radius: 10px;
     padding: 0.25%;
 }
 /* main content styling */
 main{
-    display:flex;
-    flex-direction: column;
-    margin:10px 10%;
-    gap:10px;
+    margin: 25px;
     color: var(--sapphireblue);
 }
 /* article content spacing styling */
 article {
     display:flex;
-    flex-direction: column;
-    gap: 10px;
+    margin: 0px 0px 15px 0px;
 }
-/* h3 article content heading styling */
-h3 {
+/* article title styling */
+.title {
+    width: 15%;
     border-right:double 5px;
     text-align: right;
     font-size: 200%;
-    padding-right: 5px;
+    padding-right: 10px;
 }
 /* about me content styling */
 .aboutme {
-    display:inline-flex;
-    flex-direction: row;
+    width: 60%;
+    max-width: 1500px;
     text-align: justify;
-    padding-left:5px;
+    padding-left:10px;
 }
-/* work content styling */
-.work {
-    display:inline-flex;
-    flex-direction: row;
-    padding-left: 5px;
+.avatar {
+    width: 25%;
+}
+.avatar img{
+    width: 100%;
+    padding-left: 10px;
 }
 /* displayed aera for work content area */
 .workdisplay {
-    display:inline-flex;
-    flex-direction: column;
+    width:85%;
+    max-width: 1500px;
+    padding-left: 10px;
     gap: 10px;
+}
+.workdisplay a{
+    position:relative;
+}
+.workdisplay a:hover {
+    background-color: var(--brightred);
 }
 /* feature work styling */
 .feature {
     width:100%;
-    display:inline-flex;
-    flex-direction:row;
 }/* feature work img styling */
-.feature a figure img {
+.feature img {
     width: 100%;
     padding:5px;
     background-color: var(--goldenyellow);
@@ -137,21 +140,23 @@ h3 {
 /* quad features styling */
 .quadfeatures {
     width:100%;
-    display:inline-flex;
-    flex-direction:row;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     gap: 10px;
 }
 /* sample work styling */
 .samples {
-    width:100%;
-    display: inline-flex;
-    flex-direction:column;
-    border: 3px;
-    gap: 10px;
+    width:50%;
+    max-width: 500px;
+    max-height: 300px;
 }
 /* quad features img styling */
-.samples a figure img {
+.samples img {
     width: 100%;
+    max-width: 500px;
+    height: 100%;
+    max-height: 300px;
     padding:5px;
     background-color: var(--goldenyellow);
     border-radius: 5px;
@@ -163,6 +168,7 @@ h3 {
 }
 /* work images figcaption label styling */
 figcaption {
+    position: absolute;
     text-decoration:none;
     margin-right:50%;
     position:relative;
@@ -180,19 +186,19 @@ a h4 {
 }
 /* contact content styling */
 .contact {
+    width: 85%;
+    max-width: 1500px;
     display: inline-flex;
-    flex-direction: row;
     align-items:center;
+    justify-content: center;
 }
 /* contact list styling */
 .contact ul {
-    justify-content:space-between;
     list-style: none;
 }
 /* contact list styling */
 .contact ul li {
     display:inline-flex;
-    justify-content:space-between;
     text-decoration: underline;
     padding: 0 15px;
 }
@@ -213,4 +219,76 @@ footer a{
 /* footer link hover styling */
 footer a:hover {
     color: var(--brightred);
+}
+
+/* Media Inquiries */
+@media screen and (max-width: 834px) {
+    header {
+        font-size: 100%;
+    }
+    h1 {
+        font-size:150%;
+    }
+    h2 {
+        font-size: 100%;
+    }
+    .title {
+        font-size: 100%;
+    }
+    h3 {
+        font-size: 100%;
+    }
+    h4 {
+        font-size: 100%;
+    }
+    footer {
+        background-color: var(--softwhite);
+        font-size: 0%;
+        min-height: 0%;
+        max-height: 0%;
+    }
+    footer a{
+        font-size: 0%;
+        min-height: 0%;
+        max-height: 0%;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    body{
+        font-size: 10px;
+    }
+    header {
+        font-size:100%;
+    }
+    h1 {
+        font-size: 110%;
+    }
+    .banner {
+        min-height: 0px;
+        max-height: 0px;
+    }
+    h2 {
+        font-size: 0%;
+    }
+    .title {
+        font-size: 100%;
+    }
+    h3 {
+        font-size: 100%;
+    }
+    h4 {
+        font-size: 80%;
+    }
+    footer {
+        background-color: var(--softwhite);
+        font-size: 0%;
+        min-height: 0%;
+        max-height: 0%;
+    }
+    footer a{
+        font-size: 0%;
+        min-height: 0%;
+        max-height: 0%;
+    }
 }
